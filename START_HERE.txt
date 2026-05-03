@@ -1,0 +1,223 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                 BIENVENIDO A RETOS CTF PRÁCTICOS                           ║
+║            Repositorio colaborativo para estudiantes de CTF                ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+📦 CONTENIDO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ 29 RETOS  →  7 CATEGORÍAS  →  3 NIVELES  →  100+ ARCHIVOS
+
+📂 Estructura:
+   
+   Retos-CTF-Prácticos/
+   ├── WEB/          (6 retos)  - Vulnerabilidades web
+   ├── CRYPTO/       (6 retos)  - Criptografía
+   ├── PWN/          (6 retos)  - Binary exploitation
+   ├── REVERSING/    (3 retos)  - Ingeniería inversa
+   ├── FORENSICS/    (3 retos)  - Análisis forense
+   ├── STEGO/        (3 retos)  - Esteganografía
+   └── OSINT/        (3 retos)  - Inteligencia de fuentes abiertas
+
+
+🚀 QUICK START
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  ELEGIR UN RETO
+    $ cd WEB/Facil/hidden_endpoint
+
+2️⃣  LEER INSTRUCCIONES
+    $ cat README.md
+
+3️⃣  RESOLVER EL RETO
+    (Completa el desafío)
+
+4️⃣  VERIFICAR RESPUESTA
+    $ python3 checker.py "CTF{tu_flag}"
+    
+    ✓ Salida: OK       → ¡Correcto!
+    ✗ Salida: FAIL     → Intenta de nuevo
+
+
+📚 DOCUMENTACIÓN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📖 README.md          →  Guía principal
+📇 INDICE.md          →  Tabla de todos los retos
+⚙️  PROTOCOLO.md       →  Estándares y templates
+📝 GUIA_RAPIDA.md     →  Comenzar en 5 minutos
+🤝 CONTRIBUYE.md      →  Cómo compartir soluciones
+🐙 GITHUB_SETUP.md    →  Publicar en GitHub
+✅ RESUMEN.md         →  Todo lo que se creó
+
+
+🎯 RUTAS RECOMENDADAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🟢 PRINCIPIANTE (Comienza aquí)
+   1. WEB/Facil/hidden_endpoint
+   2. WEB/Facil/cookie_sin_firma
+   3. CRYPTO/Facil/caesar
+   4. CRYPTO/Facil/base64_doble
+   5. PWN/Facil/bof
+   
+   → Tiempo: 2-3 horas  |  Conceptos: Básicos
+
+🟡 INTERMEDIO (Profundiza)
+   1. WEB/Medio/sqli_union
+   2. WEB/Medio/xss_reflejado
+   3. CRYPTO/Medio/repeating_xor
+   4. REVERSING/Medio/obfuscacion
+   
+   → Tiempo: 5-10 horas  |  Conceptos: Avanzados
+
+🔴 AVANZADO (Domina)
+   1. WEB/Difícil/race_condition
+   2. PWN/Difícil/rop
+   3. REVERSING/Difícil/vm
+   4. FORENSICS/Difícil/pcap_fragmentado
+   
+   → Tiempo: 10+ horas  |  Conceptos: Expertos
+
+
+💻 EJEMPLO RESOLVIENDO UN RETO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+$ cd WEB/Facil/hidden_endpoint
+$ cat README.md
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ # Hidden Endpoint (WEB - Fácil)                                     │
+│ ## Descripción                                                      │
+│ La aplicación tiene un endpoint oculto en JavaScript que revela    │
+│ la flag. El objetivo es encontrarlo.                               │
+│                                                                     │
+│ ## Instrucciones                                                    │
+│ 1. Inicia el servidor: node app.js                                 │
+│ 2. Abre http://localhost:3000 en el navegador                      │
+│ 3. Busca el endpoint en el código JavaScript                       │
+│ 4. Accede a /api/flag_hidden_92a                                   │
+│                                                                     │
+│ ## Solución                                                         │
+│ - Abre las herramientas de desarrollador (F12)                     │
+│ - Ve a la pestaña "Network" o "Sources"                            │
+│ - Busca en public/script.js el endpoint                            │
+│ - Accede directamente a http://localhost:3000/api/flag_hidden_92a │
+│ - La flag aparece en la respuesta: CTF{hidden_js123}               │
+│                                                                     │
+│ ## Flag                                                             │
+│ CTF{hidden_js123}                                                   │
+└─────────────────────────────────────────────────────────────────────┘
+
+$ python3 checker.py "CTF{hidden_js123}"
+OK
+
+✅ ¡Completado!
+
+
+🛠️ HERRAMIENTAS RECOMENDADAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WEB           →  Burp Suite, curl, Firefox DevTools
+CRYPTO        →  CyberChef, OpenSSL, Python
+PWN           →  GDB, Radare2, pwntools
+REVERSING     →  Ghidra, IDA Free, objdump
+FORENSICS     →  Volatility, Wireshark, exiftool
+STEGO         →  Stegsolve, Binwalk, SilentEye
+OSINT         →  Shodan, Google, Maltego
+
+
+📊 MIS ESTADÍSTICAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Retos completados:     [ ] / 29
+Categorías dominadas:  [ ] / 7
+Tiempo invertido:      0 horas
+
+Próximo objetivo:      WEB/Facil/hidden_endpoint
+
+
+🌐 PUBLICAR EN GITHUB
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Lee GITHUB_SETUP.md para:
+1. Crear repositorio en GitHub
+2. Subir tus retos
+3. Invitar compañeros
+4. Colaborar en soluciones
+
+
+🤝 COMPARTIR SOLUCIONES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+$ git checkout -b mi-solucion
+$ echo "# Mi solución" > WEB/Facil/hidden_endpoint/solution.md
+$ git add .
+$ git commit -m "Solución WEB/Facil/hidden_endpoint"
+$ git push origin mi-solucion
+
+Luego abre un Pull Request en GitHub para que otros revisen tu solución.
+
+
+❓ PREGUNTAS FRECUENTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+P: ¿Debo hacer todos los retos?
+R: No, comienza con los que te interesen y avanza gradualmente.
+
+P: ¿Cuál es el mejor orden?
+R: Fácil → Medio → Difícil (por categoría o todas las categorías)
+
+P: ¿Dónde busco ayuda?
+R: En el README de cada reto hay recursos útiles.
+
+P: ¿Puedo ver la solución antes de intentar?
+R: Sí, pero intenta primero - ¡el aprendizaje viene de intentar!
+
+P: ¿Cómo compartir mis soluciones?
+R: Lee CONTRIBUYE.md para enviar un PR con tu solución.
+
+
+📞 SOPORTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Issues            →  Reportar errores
+Discussions       →  Preguntas generales
+Pull Requests     →  Compartir soluciones
+Email             →  Contacto directo
+
+
+📚 RECURSOS EXTERNOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+HackTricks                 →  https://book.hacktricks.xyz/
+PayloadsAllTheThings       →  https://github.com/swisskyrepo/PayloadsAllTheThings
+PortSwigger Academy        →  https://portswigger.net/web-security
+Pwn College                →  https://pwn.college/
+TryHackMe                  →  https://tryhackme.com/
+OWASP Top 10               →  https://owasp.org/
+
+
+🎯 PRÓXIMOS PASOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Lee este archivo hasta el final
+2. Abre GUIA_RAPIDA.md para comenzar
+3. Elige tu primer reto
+4. ¡Comienza a hackear!
+
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║  🎯 ¡Feliz Hacking!                                                       ║
+║                                                                           ║
+║  Recuerda: La seguridad es una habilidad que se aprende practicando.     ║
+║  Cada reto es una oportunidad para aprender algo nuevo.                  ║
+║                                                                           ║
+║  Última actualización: Mayo 3, 2026                                      ║
+║  Versión: 1.0                                                            ║
+║  Estado: ✅ LISTA PARA USAR                                              ║
+║                                                                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+Este es un proyecto educativo hecho con ❤️ para aprender ciberseguridad.

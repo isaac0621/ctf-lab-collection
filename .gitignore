@@ -1,0 +1,70 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Binaries
+*.o
+*.a
+*.so
+*.out
+*.exe
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# CTF specific
+*.core
+.gdb_history
+.lldb_history
+
+# Images/Media
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+
+# Memory dumps
+*.bin
+*.dump
+*.vmem
+
+# PCAPs
+*.pcap
+*.pcapng
+
+# Compiled binaries (but keep source)
+/PWN/*/binary
+/PWN/*/*.o
+
+# Temporary files
+*.tmp
+*.temp
+*.log
